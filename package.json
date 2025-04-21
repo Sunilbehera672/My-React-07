@@ -1,0 +1,30 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "This is a live course ",
+  "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunilbehera672/My-React-07.git"
+  },
+  "author": "Sunil Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sunilbehera672/My-React-07/issues"
+  },
+  "homepage": "https://github.com/Sunilbehera672/My-React-07#readme",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserlist": [
+    " last 2 vresions "
+  ]
+}
