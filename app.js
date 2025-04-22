@@ -1,28 +1,57 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 
-//heading 1
- const heading1 = React.createElement("h1", 
-    {
-          key : "h1",
-          id: "title",
-          className: "class"
-    },
-     "Hello World");
-    //heading 2
-    const heading2 = React.createElement("h2", 
-    {
-          key : "h2",
-          id: "title",
-          className: "class"
-    },
-     "Hello Class");
-    //div container 
-    const container = React.createElement("div",
-    {
-      id:"container"
-    },[heading1,heading2]);//there are two child heading1 and heading2 . In react if there are two child then you need to give them different keys , because react will easily recognise the child and modifed it .
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    //rendering the container .
-    root.render(container);
-    
+//React Element
+
+//const jsxheading = <h1 id="heading">Namste React using jsx</h1>
+
+//if we use jsx in multiple line then we need to use braket i.e paranthesis.
+//const jh = (<h1>
+// Namaste react
+//  <h1>)   like that
+
+
+//React Component 
+//- class based component - old 
+//- functional based component - new 
+// React functional component :- 
+// const HeadingComponent = ()=>{
+//       return <h1>Namste React functional Component </h1>
+// }
+
+// Component Composition => component inside a component 
+// const Title = ()=>{
+//     return   <h1 id = "head" >Namaste Everyone </h1>
+// }
+
+// const Heading1 = ()=>{
+//     return   <div id = "root">
+//       <Title/>
+//       <h1 id = "head1">Namaste React</h1>
+//     </div>
+// }
+
+const ele = <span>Raect Element </span>
+
+const title =(
+      <h1
+      id = "heading" className = "root">
+            {ele}
+            Namaste Sunil🤝
+      </h1>
+);
+
+const HeadingComponent = ()=>{
+      return (
+            <div id = "divele" >
+                  {title}
+                  <h1 id = "heading1">
+                        Namaste Everyone using jsx🤷‍♀️
+                  </h1>
+            </div>
+      )
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent/>);
