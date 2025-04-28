@@ -17,3 +17,18 @@
 - HTTPs
 - Tree Shaking - Removed Unused Code for You
 - Different Dev and Prod bundles
+# Namaste Food
+/**
+ * Header
+ * -logo component
+ * -Nav component
+ * Body
+ * -Search
+ * -Resturant component
+ *    - Resturant card
+ * Footer
+ * -Copyright
+ * -Links
+ * -Address
+ * -Contact
+ */
